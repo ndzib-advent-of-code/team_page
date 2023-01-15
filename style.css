@@ -1,0 +1,91 @@
+.main {
+    background-color: #17213F;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: repeat(4, 260px);
+    gap: 30px;
+}
+
+.card {
+    border-radius: 4px;
+    overflow: hidden;
+    line-height: 28px;
+    cursor: pointer;
+    transition: all .5s;
+
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3);
+    color: white;
+    background-color: #0F162B;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card-title {
+    font-weight: 700;
+}
+
+.card-desc {
+    opacity: .5;
+}
+
+.card-image {
+    height: 170px;
+    width: 100%;
+}
+
+
+.card-content {
+    padding: 16px 20px;
+}
+
+.card-footer {
+    margin-top: 10px;
+}
+
+.footer-title {
+    opacity: .5;
+    font-size: 12px;
+}
+
+.footer-content {
+    height: 20px;
+}
+
+.button {
+    min-height: 250px;
+    background-color: transparent;
+    font-weight: bold;
+}
+
+.light {
+    opacity: .5;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .team {
+        grid-template-columns: repeat(3, 260px);
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .team {
+        grid-template-columns: repeat(2, 260px);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .team {
+        grid-template-columns: 260px;
+    }
+}
